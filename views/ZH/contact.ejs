@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./head'); %>
+    <title>Contact</title>
+</head>
+<body>
+
+  <%- include('./nav2'); %>
+
+  <div class="container-fluid" style="margin-top: 6rem;">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-5">
+            <div class="card" style="width: 28rem;">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12">
+                        <h3 class="card-title">联系方式</h3>
+                        <h5 class="card-subtitle mb-2">一五八光电有限公司</h5>
+                        <p class="card-text text-muted">我们期待您的反馈</p>
+                        <ul class="list-group">
+                          <li class="list-group-item"><i class="fa fa-phone"></i> 电话：</li>
+                          <li class="list-group-item"><i class="fa fa-envelope"></i> 邮箱：</li>
+                          <li class="list-group-item"><i class="fa fa-print"></i> 传真：</li>
+                        </ul>
+                      </div>
+                    </div>  
+                    
+                  </div>
+
+              </div>
+        </div>
+        <div class="col-5">
+            <form action="../contact" method="POST">
+                <div class="row">
+                  <div class="col-12 text-center">
+                    <h3>留言反馈</h3>
+                  </div>
+                </div>
+                <div class="row mt-2">
+                  <div class="col-6">
+                      <div class="input-group mb-3">
+                        <span class="input-group-text">名:</span>
+                        <input type="text" class="form-control" placeholder="First Name">
+                      </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text">姓:</span>
+                      <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text">邮箱:</span>
+                      <input type="text" class="form-control" placeholder="example@abc.com">
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text">手机:</span>
+                      <input type="text" class="form-control" placeholder="( ___ ) - ___ - ____">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="input-group">
+                      <span class="input-group-text">消息</span>
+                      <textarea class="form-control" aria-label="With textarea" placeholder="Message"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row align-item-center mt-3">
+                  <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-light">提交</button>
+                  </div>
+                </div>
+              </form>
+        </div>
+    </div>
+  </div>
+  <footer>
+    <%- include('./footer'); %>
+  </footer>
+  <%- include('./scripts'); %>
+</body>
+</html>
